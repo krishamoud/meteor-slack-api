@@ -152,6 +152,14 @@ Each `callback` function receives one or two arguments: `error` and `response` (
 
 I have tested all of the synchronous calls. Their tests can be found in `slack-api-tests.js`
 
+To run the tests yourself you are going to need an `accessToken` and a slack `userId` then you can run the tests with this command.
+
+```
+export USER="U123456789" 
+export TOKEN="TOKEN"`
+meteor test-packages ./
+```
+
 ## Todo
 
 * test async calls
