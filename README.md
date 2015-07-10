@@ -146,3 +146,12 @@ Each `callback` function receives one or two arguments: `error` and `response` (
 * [SlackAPI.users.list(token, callback)](https://api.slack.com/methods/users.list)
 * [SlackAPI.users.setActive(token, callback)](https://api.slack.com/methods/users.setActive)
 * [SlackAPI.users.setPresence(token, presence, callback)](https://api.slack.com/methods/users.setPresence)
+
+
+## Testing
+
+I have tested all of the synchronous calls. Their tests can be found in `slack-api-tests.js`
+
+## Todo
+
+* test async calls
