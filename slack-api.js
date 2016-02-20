@@ -551,6 +551,30 @@ SlackAPI = {
 
     //users
     users:{
+        admin : {
+            invite : function(token, email, channels, callback){
+                var params = {
+                    token : token,
+                    email : email,
+                    channels : channels
+                };
+                return SlackAPI._apiCall('users.admin.invite', params, callback);
+            },
+            setInactive : function(token, userId, callback){
+                var params = {
+                    token : token,
+                    user : userId
+                };
+                return SlackAPI._apiCall('users.admin.setInactive', params, callback);
+            },
+            setRegular : function(token, userId, callback){
+                var params = {
+                    token : token,
+                    user : userId
+                };
+                return SlackAPI._apiCall('users.admin.setRegular', params, callback);
+            }
+        },
         getPresence:function(token, callback){
             var params = {
                 token: token
