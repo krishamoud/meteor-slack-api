@@ -191,7 +191,7 @@ SlackAPI = {
             // Append relevant params from options.
             _.each(optionsList, function(opt) {
                 if (!_.isUndefined(options[opt])) {
-                    if (opt === 'attachments') {
+                    if (opt === 'attachments' || opt === 'blocks') {
                         options[opt] = JSON.stringify(options[opt]); // JSON-encoded array of attachment hashes
                     }
                     params[opt] = options[opt];
