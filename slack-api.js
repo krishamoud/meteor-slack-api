@@ -187,7 +187,7 @@ SlackAPI = {
                 text: message
             };
             // List of possible options fields in options.
-            var optionsList = ['as_user', 'parse', 'attachments', 'link_names', 'unfurl_links', 'username', 'icon_url', 'icon_emoji'];
+            var optionsList = ['as_user', 'parse', 'attachments', 'link_names', 'unfurl_links', 'username', 'icon_url', 'icon_emoji', 'blocks', 'mrkdwn', 'reply_broadcast', 'thread_ts', 'unfurl_media'];
             // Append relevant params from options.
             _.each(optionsList, function(opt) {
                 if (!_.isUndefined(options[opt])) {
