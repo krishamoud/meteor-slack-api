@@ -187,11 +187,11 @@ SlackAPI = {
                 text: message
             };
             // List of possible options fields in options.
-            var optionsList = ['as_user', 'parse', 'attachments', 'link_names', 'unfurl_links', 'username', 'icon_url', 'icon_emoji'];
+            var optionsList = ['as_user', 'parse', 'attachments', 'link_names', 'unfurl_links', 'username', 'icon_url', 'icon_emoji', 'blocks', 'mrkdwn', 'reply_broadcast', 'thread_ts', 'unfurl_media'];
             // Append relevant params from options.
             _.each(optionsList, function(opt) {
                 if (!_.isUndefined(options[opt])) {
-                    if (opt === 'attachments') {
+                    if (opt === 'attachments' || opt === 'blocks') {
                         options[opt] = JSON.stringify(options[opt]); // JSON-encoded array of attachment hashes
                     }
                     params[opt] = options[opt];
