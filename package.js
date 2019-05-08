@@ -1,6 +1,6 @@
 Package.describe({
   name: 'joephuz:slack-api',
-  version: '0.0.3',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   //forked from https://github.com/krishamoud/meteor-slack-api
   summary: 'Slack API written for meteor',
